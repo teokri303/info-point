@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your website title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- Full screen picture with welcome message and button -->
+    <div class="welcome-section" id="welcome-section">
+      <div class="welcome-message">
+        <h1>Welcome to Your Website</h1>
+        <p>A fancy and modern welcome message.</p>
+        <button id="enter-site-button">Enter Site</button>
+      </div>
+    </div>
+    
+    <!-- Main section with three buttons -->
+    <div class="main-section" id="main-section">
+      <div class="header" id="header">
+        <img src="logo.png" alt="Company logo">
+        <h2>Company Name</h2>
+      </div>
+      <div class="button-section" id="button-section">
+        <div class="button">
+          <h3>Action 1</h3>
+        </div>
+        <div class="button">
+          <h3>Action 2</h3>
+        </div>
+        <div class="button">
+          <h3>Action 3</h3>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const enterSiteButton = document.getElementById("enter-site-button");
+      const welcomeSection = document.getElementById("welcome-section");
+      const header = document.getElementById("header");
+      const buttonSection = document.getElementById("button-section");
+
+      buttonSection.style.display = "none";
+      header.style.display = "none";
+
+      enterSiteButton.addEventListener("click", () => {
+        welcomeSection.classList.add("fade-out");
+        setTimeout(() => {
+          welcomeSection.style.display = "none";
+          buttonSection.style.display = "flex";
+          header.style.display = "block";
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
