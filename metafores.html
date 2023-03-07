@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ΜΕΤΑΦΟΡΕΣ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      /* Responsive styles to ensure the form fits the screen */
+      html {
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .iframe-container {
+        height: 100%;
+        position: relative;
+      }
+      .iframe-container iframe {
+        border: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="home.html" type="button" class="btn btn-primary btn-sm">Back</a>
+      
+    <div class="iframe-container">
+      <iframe
+        id="redirect"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSc7MBP_aCHJy3BY1nWYKjuNDsfg3cLbnQsHq5wOpR9QjJZRUQ/viewform?embedded=true"
+        width="640"
+        height="1776"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >Φόρτωση…</iframe
+      >
+    </div>
+
+    <script>
+      let page = 0;
+      const redirect = document.querySelector("#redirect");
+      redirect.addEventListener("load", () => {
+        page++;
+        const numOfPages = 2; // Replace with Number of Pages in Survey
+        if (page >= numOfPages) {
+          window.location.href = "final.html"; // Replace with the Page you want to send them to
+        }
+      });
+    </script>
+  </body>
+</html>
