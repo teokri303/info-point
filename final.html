@@ -10,122 +10,236 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .container {
+        display: flex; /* Use flexbox to position elements side by side */
+        background-color: rgb(241, 239, 239); /* Set background color to grey */
+      }
+
+      .box {
+        width: 25%; /* Divide the container into 4 equal parts */
+        height: 100px; /* Set the height of the boxes */
+        display: flex; /* Use flexbox to center text vertically */
+        justify-content: center; /* Center text horizontally */
+        align-items: center; /* Center text vertically */
+      }
+    </style>
   </head>
   <body>
-    <div style="margin-bottom: 200px;">
-      <a  href="home.html"  type="button" class="btn btn-primary btn-lg btn-block">Εαν επιθυμείτε να καταθέσετε νέα φόρμα, πατήστε εδώ.</a>
-      <h1 style="text-align: center;">Thank You for Submitting the Form!</h1>
+    <div style="margin-bottom: 100px">
+      <a href="home.html" type="button" class="btn btn-primary btn-lg btn-block"
+        >Εαν επιθυμείτε να καταθέσετε νέα φόρμα, πατήστε εδώ.</a
+      >
+      <h1 style="text-align: center; margin-bottom: 200px; margin-top: 150px; ">Thank You for Submitting the Form!</h1>
     </div>
 
-    <!-- Remove the container if you want to extend the Footer to full width. -->
 
-    <footer style="bottom: 0px; background-color: grey; text-align: center;" class="bg-dark text-center text-lg-start text-white fixed-bottom">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row mt-4">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">
-              Φοιτητικός Σύλλογος Κοινωνιολογίας «Νίκος Πουλαντζάς»
-            </h5>
-          </div>
-          <!--Grid column-->
+    <div class="container">
 
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">
-              Φοιτητικός Σύλλογος Πολιτισμικής Τεχνολογίας και Επικοινωνίας
-              «Στράτης Ελευθεριάδης Τεριάντ»
-            </h5>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">
-              Φοιτητικός Σύλλογος Γεωγραφίας «ΠΙΤΤΑΚΟΣ»
-            </h5>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">
-              Φοιτητικός Σύλλογος Κοινωνικής Ανθρωπολογίας και Ιστορίας
-              «Οδυσσέας Ελύτης»
-            </h5>
-          </div>
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">
-              Φοιτητικός Σύλλογος Περιβάλλοντος «Μιχάλης Μυρογιάννης»
-            </h5>
-
-          </div>
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">
-              Φοιτητικός Σύλλογος Ωκεανογραφίας και Θαλάσσιων Βιοεπιστημών
-              «Νικος Καββαδίας»
-            </h5>
-          </div>
-          <!--Grid column-->
+      <div class="container">
+        <div class="box">
+          <h5 class="text-uppercase">
+            Φ.Σ. Κοινωνιολογίας «Νίκος Πουλαντζάς»
+          </h5>
         </div>
-        <!--Grid row-->
+        <div class="box">
+          <a
+            href="https://instagram.com/foit_syllogos_koinoniologias?igshid=YmMyMTA2M2Y= "
+            ><img
+              style="width: 55px; height: 55px"
+              class="image"
+              src="media/insta.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="mailto:SU_Sociology@soc.aegean.gr"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/mail.png"
+              alt=""
+          /></a>
+        </div>
       </div>
-      <!-- Grid container -->
-    </footer>
-
-    <footer class="bg-info text-center text-lg-start fixed-bottom">
-      <!-- Grid container -->
-      <div class="container p-4">
   
-          <!--Grid column-->
+      <div class="container">
+        <div class="box">
+          <h5 class="text-uppercase">
+            Φ.Σ. Πολιτισμικής Τεχνολογίας και Επικοινωνίας «Στράτης
+            Ελευθεριάδης Τεριάντ»
+          </h5>
+        </div>
+        <div class="box">
+          <a
+            href="https://instagram.com/foit_syllogos_koinoniologias?igshid=YmMyMTA2M2Y= "
+            ><img
+              style="width: 55px; height: 55px;"
+              class="image"
+              src="media/insta.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="https://www.facebook.com/profile.php?id=100068870485782 "
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/fb.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="mailto:Su_ct@aegean.gr"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/mail.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="container">
+        <div class="box">
+          <h5 class="text-uppercase">
+            Φ.Σ. Κοινωνικής Ανθρωπολογίας και Ιστορίας «Οδυσσέας
+            Ελύτης»
+          </h5>
+        </div>
+        <div class="box">
+          <a
+            href="https://instagram.com/foititikos_syllogos_sah?igshid=YmMyMTA2M2Y="
+            ><img
+              style="width: 55px; height: 55x"
+              class="image"
+              src="media/insta.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="https://m.facebook.com/100057340304452/"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/fb.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="mailto:sah_sa@sa.aegean.gr"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/mail.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="box">
+          <h5 class="text-uppercase">
+            Φ.Σ. Περιβάλλοντος «Μιχάλης Μυρογιάννης»
+          </h5>
+        </div>
+        <div class="box">
+          <a
+            href="https://instagram.com/foititikos_syllogos_sah?igshid=YmMyMTA2M2Y="
+            ><img
+              style="width: 55px; height: 55px"
+              class="image"
+              src="media/insta.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="https://www.facebook.com/env.student.society"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/fb.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="mailto:Stud_union@env.aegean.gr"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/mail.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+  
     
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Links</h5>
-    
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-dark">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-    
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-    
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-dark">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-    
-      <!-- Copyright -->
-    </footer>
+    </div>
+
+    <div class="container">
+
+      <div class="container">
+        <div class="box">
+          <h5 class="text-uppercase">
+            Φ.Σ. Ωκεανογραφίας και Θαλάσσιων Βιοεπιστημών «Νικος
+            Καββαδίας»
+          </h5>
+        </div>
+  
+        <div class="box">
+          <a href="mailto:septh@marine.aegean.gr"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/mail.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+     
+      <div class="container">
+        <div class="box">
+          <h5 class="text-uppercase">
+            Φ.Σ. Γεωγραφίας «ΠΙΤΤΑΚΟΣ»
+          </h5>
+        </div>
+        <div class="box">
+          <a
+            href="https://instagram.com/foit_syllogos_koinoniologias?igshid=YmMyMTA2M2Y= "
+            ><img
+              style="width: 55px; height: 55px"
+              class="image"
+              src="media/insta.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="/https://www.facebook.com/profile.php?id=100068870485782 "
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/fb.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="mailto:syllogos@geo.aegan.gr"
+            ><img
+              style="width: 40px; height: 40px"
+              class="image"
+              src="media/mail.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+
+    </div>
+
+
+
   </body>
 </html>
