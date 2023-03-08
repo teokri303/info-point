@@ -100,7 +100,7 @@ body {
 
 
 
-/* CSS for small screens */
+
 @media screen and (max-width: 767px) {
   /* Adjust the welcome message font size */
   .welcome-message h1 {

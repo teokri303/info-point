@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
     <meta charset="UTF-8" />
     <title>Aegean-Uni-Meroimna</title>
     <meta charset="utf-8" />
@@ -12,8 +13,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
       .container {
+        width: 100%;
         display: flex; /* Use flexbox to position elements side by side */
-        background-color: rgb(241, 239, 239); /* Set background color to grey */
+        background-color: #eceaea;
+        
       }
 
       .box {
@@ -23,23 +26,59 @@
         justify-content: center; /* Center text horizontally */
         align-items: center; /* Center text vertically */
       }
+
+      @media (max-width: 767px) {
+        .container {
+          display: block;
+          padding: 0 10px; 
+        }
+
+        .box {
+          display: flex;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+
+        }
+        .boxme {
+        height: 150px; /* Set the height of the boxes */
+        display: flex; /* Use flexbox to center text vertically */
+        
+      }
+
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 18px;
+        }
+        .btn {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+      }
     </style>
   </head>
   <body>
     <div style="margin-bottom: 100px">
       <a href="home.html" type="button" class="btn btn-primary btn-lg btn-block"
-        >Εαν επιθυμείτε να καταθέσετε νέα φόρμα, πατήστε εδώ.</a
+        >Κατάθεση νέας φόρμας.</a
       >
-      <h1 style="text-align: center; margin-bottom: 200px; margin-top: 150px; ">Thank You for Submitting the Form!</h1>
+      <h1 style="text-align: center; margin-bottom: 200px; margin-top: 150px">
+        Thank You for Submitting the Form!
+      </h1>
     </div>
 
 
+    <p style="text-align: center;">Βρείτε τους Φοιτητικούς Συλλόγους μας στούς παρακάτω συνδέσμους: </p>
+
     <div class="container">
+
 
       <div class="container">
         <div class="box">
           <h5 class="text-uppercase">
-            Φ.Σ. Κοινωνιολογίας «Νίκος Πουλαντζάς»
+            Φ.Σ. Κοινωνιολογίας «Νίκος Πουλαντζάς».
           </h5>
         </div>
         <div class="box">
@@ -62,19 +101,19 @@
           /></a>
         </div>
       </div>
-  
+
+
       <div class="container">
         <div class="box">
           <h5 class="text-uppercase">
-            Φ.Σ. Πολιτισμικής Τεχνολογίας και Επικοινωνίας «Στράτης
-            Ελευθεριάδης Τεριάντ»
+            Φ.Σ. Πολιτισμικής Τεχν. & Επικ. «Στράτης Ελευθεριάδης Τεριάντ».
           </h5>
         </div>
         <div class="box">
           <a
             href="https://instagram.com/foit_syllogos_koinoniologias?igshid=YmMyMTA2M2Y= "
             ><img
-              style="width: 55px; height: 55px;"
+              style="width: 55px; height: 55px"
               class="image"
               src="media/insta.png"
               alt=""
@@ -99,16 +138,14 @@
           /></a>
         </div>
       </div>
-
     </div>
 
-    <div class="container">
 
+    <div class="container">
       <div class="container">
         <div class="box">
           <h5 class="text-uppercase">
-            Φ.Σ. Κοινωνικής Ανθρωπολογίας και Ιστορίας «Οδυσσέας
-            Ελύτης»
+            Φ.Σ. Κοινωνικής Ανθρωπολογίας & Ιστορίας «Οδυσσέας Ελύτης».
           </h5>
         </div>
         <div class="box">
@@ -140,7 +177,7 @@
           /></a>
         </div>
       </div>
-  
+
       <div class="container">
         <div class="box">
           <h5 class="text-uppercase">
@@ -176,20 +213,16 @@
           /></a>
         </div>
       </div>
-  
-    
     </div>
 
     <div class="container">
-
       <div class="container">
         <div class="box">
           <h5 class="text-uppercase">
-            Φ.Σ. Ωκεανογραφίας και Θαλάσσιων Βιοεπιστημών «Νικος
-            Καββαδίας»
+            Φ.Σ. Ωκεανογραφίας & Θαλάσσιων Βιοεπιστημών «Νικος Καββαδίας»
           </h5>
         </div>
-  
+
         <div class="box">
           <a href="mailto:septh@marine.aegean.gr"
             ><img
@@ -200,12 +233,10 @@
           /></a>
         </div>
       </div>
-     
+
       <div class="container">
         <div class="box">
-          <h5 class="text-uppercase">
-            Φ.Σ. Γεωγραφίας «ΠΙΤΤΑΚΟΣ»
-          </h5>
+          <h5 class="text-uppercase">Φ.Σ. Γεωγραφίας «ΠΙΤΤΑΚΟΣ»</h5>
         </div>
         <div class="box">
           <a
@@ -236,10 +267,6 @@
           /></a>
         </div>
       </div>
-
     </div>
-
-
-
   </body>
 </html>
