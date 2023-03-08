@@ -99,14 +99,47 @@ body {
 
 
 
-@media (max-width: 768px) {
-  .button {
-    width: 200px;
-    height: 200px;
-  }
 
-  .button h3 {
+/* CSS for small screens */
+@media screen and (max-width: 767px) {
+  /* Adjust the welcome message font size */
+  .welcome-message h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  /* Adjust the welcome message button margin */
+  .welcome-message button {
+    margin-top: 30px;
+  }
+  
+  /* Center the logo in the welcome message */
+  .welcome-message img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  /* Adjust the header font size */
+  #header h2 {
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  /* Adjust the button section layout */
+  #button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Adjust the button size */
+  #button-section button {
+    width: 80%;
+    margin-top: 20px;
     font-size: 18px;
-    padding: 8px;
   }
 }
