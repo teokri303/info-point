@@ -11,10 +11,11 @@ Students can report these issues via Google Forms that are embedded directly int
 - **Accommodation**: Submit concerns about student housing.
 - **Catering**: Provide feedback on dining services.
 
-## File Structure
-- `index.html`: Main landing page.
-- `style.css`: Project stylesheet.
-- `media/`: Folder containing images and media assets.
+## Technologies Used
+- **HTML5**: For structuring the content of the web pages.
+- **CSS3**: To style the pages and enhance user experience.
+- **JavaScript**: For interactive elements and form validations.
+- **Google Forms**: Embedded for easy issue reporting by students.
 
-## License
-This project is licensed under the MIT License.
+
+
